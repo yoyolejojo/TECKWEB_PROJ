@@ -1,0 +1,26 @@
+.form_mess{
+    
+    display: block;
+    width:360px;
+    padding: 3% 3% 20% 3%;
+    
+}
+
+
+
+
+#login{
+    margin-left: 34%;
+    margin-bottom: 2%;
+
+}
+
+#mdp{
+    margin-left:19%;
+    margin-bottom: 2%;
+}
+
+
+button{
+    width:175px;
+}

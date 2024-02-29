@@ -1,0 +1,32 @@
+.Sign{
+    display: block;
+    width:500px;
+    padding: 3% 3% 20% 3%;
+}
+
+#firstname{
+    margin-left: 34%;
+    margin-bottom: 2%;
+}
+
+#lastname{
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+#signin_login{
+    margin-left: 41%;
+    margin-bottom: 2%;
+}
+
+#signin_mdp1{
+    margin-left: 36%;
+    margin-bottom: 2%;
+
+}
+
+#signin_mdp2{
+    margin-left: 31%;
+    margin-bottom: 2%;
+}
+
