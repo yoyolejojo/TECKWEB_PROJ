@@ -1,57 +1,44 @@
 import { useState } from 'react'
 import './MainMessage.css'
-import forumNotLog from './forumNotLog'
-import forumLog from './forumLog'
 
 
-function MainMessage(props){
+const MainMessage = () => {
 
-
-    const [isConnected, setConnect] = useState(false);
-    const [page, setPage] = useState("log")
-
-    const getConnected = () =>{
-
-        setConnect(true);
-        setPage("log");
+    const [isConnected, setIsConnected] = useState(true);
+    const [inputValue, setInputValue] = useState('');
     
     
-    }
-
-    // On veut faire une methode qui permet d'afficher le forum
-    // ou non selon si l'utilisateur est connecté
-
-
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        alert(`Contenu ajouté : ${inputValue}`);
+        
+        setInputValue('');
+    };
+    
     return (
-
-    <div>
-
-
         <div>
-
-            {isConnected==true? <forumLog /> : <forumNotLog />}
+        {!isConnected ? (
+            <p id="notlog">CONNECTEZ VOUS OU INSCRIVEZ VOUS SUR ORGANIS'ASSO POUR ACCEDER AU FORUM</p>
+        ) : (
+            <div class="new_mess">
+                <form onSubmit={handleSubmit}>
+                <input id="nouveaux_message"
+                    type="text"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    placeholder="Écrivez quelque chose..."
+                />
+                <button type="submit">Ajouter</button>
+                </form>
+            </div>
+        )}
 
         </div>
-    {/* // <div class="mess">
-    //     <div class="new_mess">
-    //         <input name="new_message" id="nouveaux_message"></input>
-    //         <button>Ajouter</button>
-    //     </div> */}
-
-        {/* <div class="list_mess">
-            <ul>
-                <li>Un nouveaux message</li>
-                <li>Un autre message qui est très sympa</li>
-            </ul>
-
-        </div> */}
+    );
+    };
+      
 
 
-    </div>
-
-    )
-
-}
 
 export default MainMessage

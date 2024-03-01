@@ -3,7 +3,7 @@
 
 import {useState} from 'react'
 
-function forumLog(){
+function forumLog(props){
 
 
     return(
