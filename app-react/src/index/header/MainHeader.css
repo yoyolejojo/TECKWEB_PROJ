@@ -1,0 +1,38 @@
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    /* border:solid black; */
+
+    padding : 2% 2% 2% 2%;
+
+}
+
+.logo{
+    /* border: solid #003049; */
+    width: 5%;
+    padding-top: 1%;
+}
+
+#img_logo{
+    width:98%;
+}
+
+.search{
+    /* border:solid #780000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    width : 65%;
+    
+    
+}
+
+.link{
+    /* border:solid #fdf0d5; */
+    width: 20%;
+    float:right;
+    
+}

@@ -1,0 +1,37 @@
+
+.mess{
+
+    width:80%;
+    padding: 4% 19% 2% 4%;
+    
+}
+
+.new_mess{
+    /* border : solid #669bbc; */
+    
+    border-width:1px;
+    border-radius: 30px;
+    width:92%;
+    height: 20%;
+    padding-top: 7%;
+    margin-bottom: 5%;
+}
+
+#nouveaux_message{
+    /* width:50%; */
+    height:40%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+.list_mess{
+    /* border:solid black; */
+    
+    border-width:1px;
+    border-radius: 30px;
+    width:92%;
+    height:70%;
+    /* padding-left:42%;
+    padding-bottom: 95%; */
+}

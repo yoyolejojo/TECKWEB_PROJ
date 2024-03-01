@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './MainHeader.css'
 
 function MainHeader(){
     return(
